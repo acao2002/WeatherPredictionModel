@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <form action="{{ url_for("index")}}" method="post"> 
+        <label for="firstname">First Name:</label> 
+        <input type="text" id="firstname" name="fname" placeholder="firstname"> 
+        <label for="lastname">Last Name:</label> 
+        <input type="text" id="lastname" name="lname" placeholder="lastname"> 
+        <button type="submit">Login</button> 
     <head>
-        This is a variable: {{variable}}
+        your name is {{variable}} {{variable2}}
     </head>
     <body>
-        This is a variable: {{variable2}}
     </body>
 </html>

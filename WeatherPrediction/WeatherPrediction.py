@@ -11,4 +11,6 @@ def predict(state,days):
         Pmatrix = np.matmul(Pmatrix,Pmatrix)
     prediction = np.matmul(Pmatrix,today)
     return prediction
+
+    
 print(predict(0,6))
