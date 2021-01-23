@@ -16,13 +16,13 @@ def index():
                 state = int(request.form.get("fname") )
         # getting input with name = lname in HTML form  
                 days = int(request.form.get("lname") )
+                print(state)
+                print(days)
                 Weather = weather() 
                 prediction = Weather.predict(state,days) 
                 sunny = prediction[0]*100
                 rainy = prediction[1]*100
                 cloudy = prediction[2]*100
-        else: 
-            pass
     return render_template('index.html',var = sunny ,var1 = rainy,var2 = cloudy)
 
 if __name__ == "__main__":
