@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <form action="{{ url_for("index")}}" method="post"> 
-        <label for="firstname">First Name:</label> 
+        <label for="firstname">How is the weather today?</label> 
         <input type="text" id="firstname" name="fname" placeholder="firstname"> 
-        <label for="lastname">Last Name:</label> 
+        <label for="lastname">Prediction of how many days from today?</label> 
         <input type="text" id="lastname" name="lname" placeholder="lastname"> 
-        <button type="submit">Login</button> 
-    <head>
-        your name is {{variable}} {{variable2}}
+        <button type="submit" name ="submitname" value ="submit">submit</button> 
+    <head method = "get">
+        The weather on that day will be {{var}}%sunny {{var1}}% rainy {{var2}}% cloudy
     </head>
     <body>
     </body>
